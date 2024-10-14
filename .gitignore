@@ -1,0 +1,6 @@
+cd/giti/gnore/floder
+git init 
+git add .
+git commit -m "first commit with NumPy exercises"
+
+

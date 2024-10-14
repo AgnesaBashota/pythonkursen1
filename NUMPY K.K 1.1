@@ -1,0 +1,17 @@
+pip install numpy
+import numpy as np
+
+# Definiera matrisen A
+A = np.arange(1, 16).reshape(3, 5)
+
+# Hämta dimension, form, storlek och datatyp
+dimension = A.ndim
+shape = A.shape
+size = A.size
+dtype = A.dtype
+
+print(f"Dimension: {dimension}")
+print(f"Form: {shape}")
+print(f"Storlek: {size}")
+print(f"Datatyp: {dtype}") 
+--
