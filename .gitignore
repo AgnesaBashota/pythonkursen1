@@ -1,6 +1,155 @@
-cd/giti/gnore/floder
-git init 
-git add .
-git commit -m "first commit with NumPy exercises"
+#1
+import numpy as np
+
+# Define matrices B and C
+B = np.arange(1, 10).reshape(3, 3)
+C = np.ones((3, 3)) * 2
+
+# Print matrices B and C
+print("Matrix B:")
+print(B)
+print()
+
+print("Matrix C:")
+print(C)
+print()
+
+# Elementwise subtraction
+elementwise_subtraction = B - C
+print("Elementwise Subtraction (B - C):")
+print(elementwise_subtraction)
+print()
+
+# Elementwise multiplication
+elementwise_multiplication = B * C
+print("Elementwise Multiplication (B * C):")
+print(elementwise_multiplication)
+print()
+
+# Matrix multiplication using @ operator
+matrix_multiplication = B @ C
+print("Matrix Multiplication (B @ C):")
+print(matrix_multiplication)
+
+
+
+#2
+
+import numpy as np
+
+# Create matrix B
+B = np.arange(1, 10).reshape(3, 3)
+
+# Print the matrix B
+print("Matrix B:")
+print(B)
+print()
+
+# 1. Exponentiate each number elementwise (np.exp)
+exp_B = np.exp(B)
+print("Exponentiate each element in B (np.exp):")
+print(exp_B)
+print()
+
+# 2. Calculate the minimum value in the whole matrix
+min_value = np.min(B)
+print("Minimum value in the whole matrix:")
+print(min_value)
+print()
+
+# 3. Calculate the minimum value in each row
+min_row_values = np.min(B, axis=1)
+print("Minimum value in each row:")
+print(min_row_values)
+print()
+
+# 4. Calculate the minimum value in each column
+min_col_values = np.min(B, axis=0)
+print("Minimum value in each column:")
+print(min_col_values)
+print()
+
+# 5. Find the index of the minimum value in the whole matrix (np.argmin)
+min_index = np.argmin(B)
+print("Index of the minimum value in the whole matrix:")
+print(min_index)
+print()
+
+# 6. Find the index of the minimum value in each row (np.argmin)
+min_row_indices = np.argmin(B, axis=1)
+print("Index of the minimum value in each row:")
+print(min_row_indices)
+print()
+
+# 7. Calculate the sum for all elements
+sum_elements = np.sum(B)
+print("Sum of all elements in B:")
+print(sum_elements)
+print()
+
+# 8. Calculate the mean for each column
+mean_col = np.mean(B, axis=0)
+print("Mean of each column:")
+print(mean_col)
+print()
+
+# 9. Calculate the median for each column
+median_col = np.median(B, axis=0)
+print("Median of each column:")
+print(median_col)
+print()
+
+#3 example explanation
+
+import numpy as np
+
+# Create a 2D array A
+A = np.arange(1, 16).reshape(3, 5)
+
+# Print the entire matrix A
+print("Matrix A:")
+print(A)
+print()
+
+# Slice using fewer indices, A[1]
+print("A[1]:")
+print(A[1])
+
+
+#4 
+
+import numpy as np
+
+# Create a 2D array A
+A = np.arange(1, 10).reshape(3, 3)
+
+# Iterating over the rows of A
+for i in A:
+    print(i)
+
+
+# Iterating over each element in A
+for i in np.nditer(A):
+    print(i)
+
+
+#5
+
+import numpy as np
+
+# Create the 1D array 'a' with 30 elements
+a = np.arange(30)
+
+# Reshape 'a' into a 3D array 'b' with shape (2, 3, -1)
+b = a.reshape((2, 3, -1))
+
+# Print the original array 'a'
+print("Array a:")
+print(a)
+print()
+
+# Print the reshaped 3D array 'b'
+print("Array b (reshaped):")
+print(b)
 
 
